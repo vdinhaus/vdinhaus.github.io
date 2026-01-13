@@ -1,0 +1,20 @@
+@import url("./variables.css");
+
+body {
+  background-color: var(--backgroundColor);
+  background-image: url("../assets/grid.svg");
+  background-size: var(--gridSize);
+  margin: 0;
+  width: 100%;
+  min-height: 100dvh;
+  min-width: 100dvw;
+  height: calc(round(up, fit-content, 50px) + 100px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "National Park", sans-serif;
+  text-shadow: var(--textShadow);
+}

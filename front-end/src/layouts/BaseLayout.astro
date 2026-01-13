@@ -1,0 +1,22 @@
+---
+const { title = "Placeholder" } = Astro.props;
+import BackgroundTexture from "../components/BackgroundTexture/BackgroundTexture.astro";
+import ContentContainer from "../components/ContentContainer/ContentContainer.astro"
+import "../styles/global.css"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} @ vdinhaus</title>
+    <slot name="head" />
+	</head>
+	<body style="height: 100dvh; width: 100dvw; position: relative;">
+    <ContentContainer style="z-index: 999;"></ContentContainer>
+    <BackgroundTexture style="z-index: 1000;"></BackgroundTexture>
+		<slot />
+	</body>
+</html>

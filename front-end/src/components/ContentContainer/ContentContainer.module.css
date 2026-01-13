@@ -1,0 +1,12 @@
+.OuterRing {
+  position: fixed;
+  inset: 0;
+  border: var(--backgroundColor) solid var(--gridSize);
+  pointer-events: none;
+}
+
+.InnerRing {
+  position: absolute;
+  inset: 0;
+  outline: var(--contentBorder);
+}

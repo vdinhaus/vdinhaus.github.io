@@ -1,0 +1,28 @@
+:root {
+  --gridSize: 24px;
+  --fontSize: 14px;
+}
+
+@media screen and (min-width: 600px) and (min-height: 600px) {
+  :root {
+    --gridSize: 32px;
+    --fontSize: 18px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (min-height: 600px) {
+  :root {
+    --gridSize: 40px;
+    --fontSize: 22px;
+  }
+}
+
+:root {
+  --backgroundColor: #004ac2;
+  --borderLength: var(--gridSize);
+  --contentHeight: calc(100dvh - var(--headerHeight) - var(--footerHeight));
+  --contentWidth: calc(100dvw - 2 * var(--borderWidth));
+  --contentBorder: rgba(255, 255, 255, 0.35) solid 2px;
+  --textShadow: 0.1em 0.1em black;
+  font-size: var(--fontSize);
+}
