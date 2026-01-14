@@ -3,7 +3,7 @@
   --fontSize: 14px;
 }
 
-@media screen and (min-width: 600px) and (min-height: 600px) {
+@media screen and (min-width: 600px) and (min-height: 400px) {
   :root {
     --gridSize: 32px;
     --fontSize: 18px;

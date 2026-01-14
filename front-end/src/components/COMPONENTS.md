@@ -23,7 +23,7 @@ The component is generic, stateless, and reusable in any context.
 
 ---
 
-## 🧱 `layout/` — Page‑Level Structural Wrappers
+## 🧱 `wrappers/` — Page‑Level Structural Wrappers
 
 Defines the skeleton of a page (header, footer, sidebar, slots).
 
@@ -107,7 +107,7 @@ It’s form‑specific UI or a reusable form pattern.
 | If the component is…                | Put it in…  |
 | ----------------------------------- | ----------- |
 | A tiny reusable UI piece            | `ui/`       |
-| A wrapper for entire pages          | `layout/`   |
+| A wrapper for entire pages          | `wrappers/` |
 | A recognizable page section         | `sections/` |
 | Rendering lists or structured data  | `data/`     |
 | An SVG or icon system               | `icons/`    |
