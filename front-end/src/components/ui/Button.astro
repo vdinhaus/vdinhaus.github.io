@@ -1,0 +1,20 @@
+---
+const { variant = "Primary", href, target } = Astro.props;
+---
+<style>
+  .Primary {
+    padding: 4px;
+  }
+  .ButtonPrimary:hover {
+
+  }
+  .Secondary {
+  padding: 4px;
+  }
+  .Secondary:hover {
+
+  }
+</style>
+<a class="${variant}" href={href} target={target} >
+  <slot />
+</a>

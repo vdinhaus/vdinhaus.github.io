@@ -1,13 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/ui/Button.astro";
 ---
 
 <BaseLayout title="Home">
   <Fragment slot="head">
     
   </Fragment>
-  <p1>Vietlan Dinh's website.</p1>
   <div style="position: fixed; height: 120px; width: 320px; top: 40px; left: 40px; background-color: red;">
     <h1>@vdinhaus</h1>
   </div>
+  <p1>Vietlan Dinh's website.</p1>
+  <Button variant="ButtonSecondary" href="https://www.google.com/" target="_blank">
+    <p>Hello</p>
+  </Button>
 </BaseLayout>
