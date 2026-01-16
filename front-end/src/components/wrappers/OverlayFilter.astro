@@ -1,0 +1,18 @@
+---
+const { index, texture, opacity=0.06 } = Astro.props;
+---
+<style>
+  .BackgroundTexture {
+    background-image: var(--texture);
+    background-repeat: repeat;
+    z-index: var(--index);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: var(--opacity);
+  }
+</style>
+<div class="BackgroundTexture" style={`--texture: url(${texture}); --index: ${index}; --opacity: ${opacity};`}></div>
